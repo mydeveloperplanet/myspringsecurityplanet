@@ -1,4 +1,4 @@
-package com.mydeveloperplanet.myspringsecurityplanet;
+package com.mydeveloperplanet.myspringsecurityplanet.config;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
