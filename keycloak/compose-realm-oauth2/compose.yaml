@@ -1,0 +1,12 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.1.4
+    container_name: keycloak-realm-oauth2
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./realms:/opt/keycloak/data/import
+    command: start-dev --import-realm
